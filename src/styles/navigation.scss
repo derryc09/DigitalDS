@@ -1,0 +1,20 @@
+.drawer-frame-root{
+    display: flex;
+    height: 100vh;
+}
+.drawer-frame-app-content{
+    position: relative;
+    width: 100%;
+}
+.mdc-top-app-bar{
+    background-color: white;
+    color: gray;
+}
+.drawer-top-app-bar{
+    position: relative;
+}
+.drawer-main-content{
+    overflow: auto;
+    height: 100%;
+    padding: 0 18px;
+}

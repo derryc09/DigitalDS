@@ -1,0 +1,29 @@
+%raised-notch {
+  @extend .mdc-notched-outline;
+  @extend .mdc-notched-outline--upgraded;
+}
+.out-notch {
+  @extend %raised-notch;
+}
+
+%text-field-outlined {
+  @extend .mdc-text-field;
+  @extend .mdc-text-field--outlined;
+}
+.text-field-outlined {
+  @extend %text-field-outlined;
+}
+
+%container {
+  @extend .mdc-layout-grid;
+}
+.container {
+  @extend %container;
+}
+
+%row {
+  @extend .mdc-layout-grid__inner;
+}
+.row {
+  @extend %row;
+}

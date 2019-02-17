@@ -1,52 +1,52 @@
-@import "@material/top-app-bar/mdc-top-app-bar";
-@import "@material/drawer/mdc-drawer";
-@import "@material/list/mdc-list";
+// @import "@material/top-app-bar/mdc-top-app-bar";
+// @import "@material/drawer/mdc-drawer";
+// @import "@material/list/mdc-list";
 
-// Tabs
-@import "@material/tab-bar/mdc-tab-bar";
-@import "@material/tab-scroller/mdc-tab-scroller";
-@import "@material/tab-indicator/mdc-tab-indicator";
-@import "@material/tab/mdc-tab";
+// // Tabs
+// @import "@material/tab-bar/mdc-tab-bar";
+// @import "@material/tab-scroller/mdc-tab-scroller";
+// @import "@material/tab-indicator/mdc-tab-indicator";
+// @import "@material/tab/mdc-tab";
 
 
-//Text Field
-@import "@material/textfield/mdc-text-field";
-.ACN-Logo{
-    width: 80px;
-}
-.drawer-frame-root{
-    display: flex;
-    height: 100vh;
-}
-.drawer-frame-app-content{
-    position: relative;
-}
-.mdc-top-app-bar{
-    background-color: white;
-    color: gray;
-}
-.drawer-top-app-bar{
-    position: relative;
-}
-.drawer-main-content{
-    overflow: auto;
-    height: 100%;
-    padding: 0 18px;
-}
-.mdc-tab__text-label{
-    color: black;
-}
-%raised-notch{
-    @extend .mdc-notched-outline;
-    @extend .mdc-notched-outline--upgraded;
-}
-.out-notch{
-    @extend %raised-notch;
-}
-%text-field-outlined{
-    @extend .mdc-text-field;
-    @extend .mdc-text-field--outlined;
-}
-.text-field-outlined{
-    @extend %text-field-outlined;
-}
+// //Text Field
+// @import "@material/textfield/mdc-text-field";
+// .ACN-Logo{
+//     width: 80px;
+// }
+// .drawer-frame-root{
+//     display: flex;
+//     height: 100vh;
+// }
+// .drawer-frame-app-content{
+//     position: relative;
+// }
+// .mdc-top-app-bar{
+//     background-color: white;
+//     color: gray;
+// }
+// .drawer-top-app-bar{
+//     position: relative;
+// }
+// .drawer-main-content{
+//     overflow: auto;
+//     height: 100%;
+//     padding: 0 18px;
+// }
+// .mdc-tab__text-label{
+//     color: black;
+// }
+// %raised-notch{
+//     @extend .mdc-notched-outline;
+//     @extend .mdc-notched-outline--upgraded;
+// }
+// .out-notch{
+//     @extend %raised-notch;
+// }
+// %text-field-outlined{
+//     @extend .mdc-text-field;
+//     @extend .mdc-text-field--outlined;
+// }
+// .text-field-outlined{
+//     @extend %text-field-outlined;
+// }

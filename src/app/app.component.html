@@ -1,5 +1,239 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
 </head>
-<router-outlet></router-outlet>
+
+<div class="drawer-frame-root">
+  <aside class="mdc-drawer">
+    <div class="mdc-drawer__header">
+      <div>
+        <img
+          class="ACN-Logo"
+          src="../../../../assets/acn-logo.jpg"
+          alt="Accenture Logo"
+        />
+      </div>
+      <h3 class="mdc-drawer__title">DIGITAL PRODUCTS</h3>
+      <h3 class="mdc-drawer__title">Design System</h3>
+      <br />
+      <br />
+      <div class="text-field-container">
+        <div class="mdc-text-field mdc-text-field--outlined">
+          <input
+            type="text"
+            id="text-field-outlined"
+            class="mdc-text-field__input"
+          />
+
+          <!-- Previous code -->
+          <!-- <div class="mdc-notched-outline mdc-notched-outline--upgraded"> -->
+          <div class="out-notch">
+            <div class="mdc-notched-outline__leading"></div>
+            <div class="mdc-notched-outline__notch" style="">
+              <label
+                class="mdc-floating-label"
+                for="text-field-outlined"
+                style=""
+                >Search</label
+              >
+            </div>
+            <div class="mdc-notched-outline__trailing"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <h6 class="mdc-drawer__subtitle">email@material.io</h6> -->
+    </div>
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <a
+          class="mdc-list-item mdc-list-item--activated"
+          href="javascript:void(0);"
+          aria-selected="true"
+        >
+          <span class="mdc-list-item__text">What's new</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Getting started</span>
+        </a>
+        <a class="mdc-list-item" routerLink="/guidelines" routerLinkActive="active">
+          <span class="mdc-list-item__text">Guidelines</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Layout</span>
+        </a>
+
+        <!-- Divider -->
+        <hr class="mdc-list-divider" />
+        <h6 class="mdc-list-group__subheader">Design</h6>
+
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Layout</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Foundation</span>
+        </a>
+        <a class="mdc-list-item" routerLink="/pdp" routerLinkActive="active">
+          <span class="mdc-list-item__text">Components</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Animation</span>
+        </a>
+
+        <!-- Divider -->
+        <hr class="mdc-list-divider" />
+        <h6 class="mdc-list-group__subheader">Develop</h6>
+
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Get Started</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Documentations</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Demos</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Lorem</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--disabled" disabled href="javascript:void(0);">
+          <span class="mdc-list-item__text">Lorem</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+  <div class="drawer-frame-app-content">
+    <!-- <header class="mdc-top-app-bar draw drawer-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section
+          class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+          role="toolbar"
+        >
+         <div class="mdc-tab-bar" role="tablist">
+            <div class="mdc-tab-scroller">
+              <div class="mdc-tab-scroller__scroll-area">
+                <div class="mdc-tab-scroller__scroll-content">
+                  <button
+                    class="mdc-tab mdc-tab--active"
+                    role="tab"
+                    aria-selected="true"
+                    tabindex="0"
+                  >
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">Overview</span>
+                    </span>
+                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                      <span
+                        class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                      ></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                  <button
+                    class="mdc-tab mdc-tab--active"
+                    role="tab"
+                    aria-selected="true"
+                    tabindex="0"
+                  >
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">Resources</span>
+                    </span>
+                    <span class="mdc-tab-indicator">
+                      <span
+                        class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                      ></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                  <button
+                    class="mdc-tab mdc-tab--active"
+                    role="tab"
+                    aria-selected="true"
+                    tabindex="0"
+                  >
+                    <span class="mdc-tab__content">
+                      <span class="mdc-tab__text-label">Develop</span>
+                    </span>
+                    <span class="mdc-tab-indicator">
+                      <span
+                        class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                      ></span>
+                    </span>
+                    <span class="mdc-tab__ripple"></span>
+                  </button>
+                  <div class="text-field-container">
+                    <div
+                      class="mdc-text-field text-field mdc-text-field--outlined"
+                    >
+                      <input
+                        type="text"
+                        id="text-field-outlined"
+                        class="mdc-text-field__input"
+                      />
+                      <div
+                        class="mdc-notched-outline mdc-notched-outline--upgraded"
+                      >
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch" style="">
+                          <label
+                            class="mdc-floating-label"
+                            for="text-field-outlined"
+                            style=""
+                            >Standard</label
+                          >
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header> -->
+    <div class="drawer-main-content">
+      <!-- <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

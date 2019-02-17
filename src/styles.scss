@@ -1,6 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+
+// Grid
+@import "@material/layout-grid/mdc-layout-grid";
+
+
+
+// Buttons
 @import "@material/button/mdc-button";
 
-body{
-    margin: 0px;
-}
+// Tabs
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+
+//Text Field
+@import "@material/textfield/mdc-text-field";
+
+// Grid
+@import "@material/layout-grid/mdc-layout-grid";
+
+
+
+/*
+*
+* Custom styles
+*
+*/  
+
+// Container    
+@import "./styles/container.scss";
+
+// Navigation
+@import "./styles/navigation.scss";
+
+// Extensions
+@import "./styles/extensions.scss";
+
+// Typography
+@import "./styles/typography.scss";
